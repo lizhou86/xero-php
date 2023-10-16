@@ -367,6 +367,14 @@ class EarningsRate extends Remote\Model
         return $this;
     }
 
+    public function setIsReportableAsW1($value)
+    {
+        $this->propertyUpdated('IsReportableAsW1', $value);
+        $this->_data['IsReportableAsW1'] = $value;
+
+        return $this;
+    }
+
     /**
      * @return string
      */
